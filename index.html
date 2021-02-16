@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TFG</title>
+    <meta charset="UTF-8" />
+    <script
+      type="module"
+      src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms/blaze-atoms.js"
+    ></script>
+  </head>
+  <style>
+    .mainform {
+      translate: 50% 50%;
+    }
+    .title{
+
+    }
+    body {
+      background-color: #200080;
+    }
+  </style>
+  <body>
+    <div class="c-card u-center-block__content u-center-block__content--horizontal u-letter-box-large">
+      <div class="u-xlarge title u-centered">Logger</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="c-heading">
+      <div class="u-center-block__content u-center-block__content--horizontal">
+      <footer class="c-card__footer">
+      <span class="c-input-group">
+      <blaze-tabs>
+        <blaze-tab type="brand" header="Login" open>
+          <form class="o-container o-container--xsmall c-card u-highest">
+                    <header class="c-card__header">
+                      <h2 class="c-heading">
+                        Login
+                        <div class="c-heading__sub">Existing users</div>
+                      </h2>
+                        <div class="c-card__body">
+                        <div class="o-form-element">
+                        <label class="c-label">
+                                    Email:
+                        <input
+                                      class="c-field c-field--label"
+                                      type="email"
+                                      placeholder="your@email.com"
+                        >
+                        <div role="tooltip" class="c-hint">
+                          The email used to register the account
+                        </div>
+                      </label>
+                              </div>
+                              <label class="o-form-element c-label">
+                                Password:
+                                <input class="c-field c-field--label" type="password" />
+                              </label>
+                              <div class="o-form-element">
+                                <label class="c-toggle c-toggle--success">
+                                  Remember me?
+                                  <input type="checkbox" checked />
+                                  <div class="c-toggle__track">
+                                    <div class="c-toggle__handle"></div>
+                                  </div>
+                                </label>
+                              </div>
+                          <button type="button" class="c-button c-button--brand c-button--block">
+                            Login
+                          </button>
+                        </header>
+                    </form>
+        </blaze-tab>
+        <blaze-tab type="brand" header="Register">
+                      <form class="o-container o-container--xsmall c-card u-highest">
+                          <header class="c-card__header">
+                            <h2 class="c-heading">
+                              Register
+                              <div class="c-heading__sub">New users</div>
+                            </h2>
+                              <div class="c-card__body">
+                              <div class="o-form-element">
+                              <label class="c-label">
+                                          Email:
+                              <input
+                                            class="c-field c-field--label"
+                                            type="email"
+                                            placeholder="your@email.com"
+                              >
+                              <div role="tooltip" class="c-hint">
+                                The email used to register the account
+                              </div>
+                            </label>
+                                    </div>
+                                    <label class="o-form-element c-label">
+                                      Password:
+                                      <input class="c-field c-field--label" type="password" />
+                                    </label>
+                                    <label class="o-form-element c-label">
+                                        Confirm Password:
+                                        <input class="c-field c-field--label" type="password" />
+                                      </label>
+                                    <div class="o-form-element">
+                                      <label class="c-toggle c-toggle--success">
+                                        Remember me?
+                                        <input type="checkbox" checked />
+                                        <div class="c-toggle__track">
+                                          <div class="c-toggle__handle"></div>
+                                        </div>
+                                      </label>
+                                    </div>
+                                <button type="button" class="c-button c-button--brand c-button--block">
+                                  Register
+                                </button>
+                              </header>
+                          </form>
+                  </blaze-tab>
+                </blaze-tabs>
+            </footer>
+        </form>
+      </div>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css"
+  />
+</html>
